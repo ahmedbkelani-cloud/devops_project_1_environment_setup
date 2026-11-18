@@ -1,0 +1,48 @@
+DEVOPS WORKSTATION SETUP - TOOLING VERIFICATION REPORT
+Date: 18 November 2026
+Environment: Ubuntu 24.04.5 LTS on Windows WSL2
+
+1. VERSION CONTROL
+Git: 2.43.0
+
+2. CONTAINERIZATION
+Docker: 29.9.3
+Docker Compose: v5.7.0
+Docker hello-world test: Successful
+
+3. KUBERNETES TOOLING
+kubectl: v1.37.2
+Kustomize: v5.8.1
+Minikube: v1.39.0
+Helm: v4.3.0
+Kubernetes version: v1.37.0
+Minikube status: Running
+Kubernetes node: minikube - Ready
+
+4. CLOUD CLI TOOLS
+AWS CLI: 2.40.2
+Azure CLI: 2.93.0
+
+5. LANGUAGE RUNTIMES AND UTILITIES
+Node.js: v26.13.1
+npm: 11.20.0
+jq: 1.7
+
+6. INFRASTRUCTURE AND CONFIGURATION
+Terraform: v1.17.2
+Ansible: 2.16.3
+
+7. ENVIRONMENT
+Operating System: Ubuntu 24.04.5 LTS
+Kernel: 6.18.58.1-microsoft-standard-WSL2
+Architecture: x86_64
+Virtualization: WSL2
+
+8. VERIFICATION NOTES
+All listed tools returned version information successfully.
+Docker hello-world container test completed successfully.
+Minikube started successfully.
+kubectl get nodes confirmed the Minikube node was Ready.
+
+At the time of cluster inspection, CoreDNS and the
+storage-provisioner pods were not fully healthy.
